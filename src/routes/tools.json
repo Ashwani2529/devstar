@@ -80,6 +80,33 @@
             }
         ]
     },
+    "code-linter": {
+        "name": "CODE LINTER",
+        "link": "/code-linter",
+        "description": "A versatile tool for formatting and validating code across various programming languages including JSON, JavaScript, HTML, CSS, SQL, Python, Java, C, and C++. It offers customizable options for indentation, coding style, and column limits, ensuring clean and consistent code output.",
+        "contributors": [
+            {
+                "name": "Aryan Nimbalkar",
+                "githubId": "https://github.com/Aryan200324"
+            },
+            {
+                "name": "Atufa Akhtar",
+                "githubId": ""
+            },
+            {
+                "name": "Abhirup Mukherjee",
+                "githubId": ""
+            },
+            {
+                "name": "Tanvi Panchal",
+                "githubId": ""
+            },
+            {
+                "name": "Swakshar Bora",
+                "githubId": ""
+            }
+        ]
+    },
     "css-animator": {
         "name": "CSS Animator",
         "link": "/css-animator",
@@ -117,9 +144,9 @@
             }
         ]
     },
-    "gradient-generator": {
+    "Gradient-generator": {
         "name": "Gradient Generator",
-        "link": "/gradient-generator",
+        "link": "/Gradient-generator",
         "description": "The Gradient Generator is a tool for Developers which allows you to create Gradient between 2 Colors and Copy its CSS Output.",
         "contributors": [
             {

@@ -1,23 +1,26 @@
 {
-    "name": "",
-    "description":"",
-    "contributors": [{
-        "name": "",
-        "githubId": ""
-    }, {
-        "name": "",
-        "githubId": ""
+  "name": "CODE LINTER",
+  "description": "A versatile tool for formatting and validating code across various programming languages including JSON, JavaScript, HTML, CSS, SQL, Python, Java, C, and C++. It offers customizable options for indentation, coding style, and column limits, ensuring clean and consistent code output.",
+  "contributors": [
+    {
+      "name": "Aryan Nimbalkar",
+      "githubId": "https://github.com/Aryan200324"
     },
     {
-        "name": "",
-        "githubId": ""
+      "name": "Atufa Akhtar",
+      "githubId": ""
     },
     {
-        "name": "",
-        "githubId": ""
+      "name": "Abhirup Mukherjee",
+      "githubId": ""
     },
     {
-        "name": "",
-        "githubId": ""
-    }]
+      "name": "Tanvi Panchal",
+      "githubId": ""
+    },
+    {
+      "name": "Swakshar Bora",
+      "githubId": ""
+    }
+  ]
 }
