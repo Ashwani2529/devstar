@@ -1,0 +1,23 @@
+{
+    "name": "Online Presentation Builder",
+    "description":"The Online Presentation Editor is a web application that allows users to create, edit, style, and save presentations directly from their browser. Designed to be user-friendly and intuitive, it offers features such as slide management, text editing, font and color customization, and the ability to save presentations for easy sharing and storage.",
+    "contributors": [{
+        "name": "Vrushant Mukherjee",
+        "githubId": "https://github.com/Vrushant14"
+    }, {
+        "name": "Ramani Vemula",
+        "githubId": "https://github.com/Ramanivemula"
+    },
+    {
+        "name": "Shardul Kulkarni",
+        "githubId": "https://github.com/shardul9320"
+    },
+    {
+        "name": "Seemin Khan",
+        "githubId": "https://github.com/SeeminKhan"
+    },
+    {
+        "name": "Yash Gunjal",
+        "githubId": "https://github.com/YashGunjal16"
+    }]
+}
