@@ -1,9 +1,9 @@
 {
-    "name": "",
-    "description":"",
+    "name": "Multi-Timer",
+    "description":"This project integrates multiple timer functionalities into a single platform, offering users a comprehensive solution for time management and tracking",
     "contributors": [{
-        "name": "",
-        "githubId": ""
+        "name": "Prajwal Ganar",
+        "githubId": "Prajwal435"
     }, {
         "name": "",
         "githubId": ""
