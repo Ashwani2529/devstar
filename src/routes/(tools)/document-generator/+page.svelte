@@ -22,57 +22,96 @@
                 <div class="card gap-16 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-1 overflow-hidden rounded-lg">
                     <section class="tmeplate-section px-10 py-10 pt-5">
                     <h1 class="text-xl font-bold mb-6 text-gray-800">Templates</h1>
-                    <button class="prev-btn disabled:opacity-50 hover:bg-gray-200 px-3 py-2 rounded-md">Previous</button>
+                     
                     <div class="flex overflow x-auto gap-4">
-                        <div class="group relative w-64 h-80 rounded-lg overflow-hidden bg-gray-900 cursor pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 ">
-                            <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out t" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
-                            <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
-                                <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
-                                <p class="text-gray-300">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
-                              </div>
-                        </div>
-                        <div class="group relative w-64 h-80 rounded-lg overflow-hidden bg-gray-900 cursor pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-                            <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out t" src="https://picsum.photos/200/300?grayscale" alt="Template 1">
-                            <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
-                                <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
-                                <p class="text-gray-300">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
-                              </div>
-                        </div>
-                        <div class="group relative w-64 h-80 rounded-lg overflow-hidden bg-gray-900 cursor pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-                            <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out t" src="https://picsum.photos/id/237/200/300" alt="Template 1">
-                            <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
-                                <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
-                                <p class="text-gray-300">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus i</p>
-                              </div>
-                        </div>
-                        <div class="group relative w-64 h-80 rounded-lg overflow-hidden bg-gray-900 cursor pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-                            <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out t" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
-                            <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
-                                <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
-                                <p class="text-gray-300">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
-                              </div>
-                        </div>
-                        <div class="group relative w-64 h-80 rounded-lg overflow-hidden bg-gray-900 cursor pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-                            <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out t" src="https://picsum.photos/200/300?grayscale" alt="Template 1">
-                            <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
-                                <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
-                                <p class="text-gray-300">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
-                              </div>
-                        </div>
-                        <div class="group relative w-64 h-80 rounded-lg overflow-hidden bg-gray-900 cursor pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
-                            <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out t" src="https://picsum.photos/id/237/200/300" alt="Template 1">
-                            <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
-                                <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
-                                <p class="text-gray-300">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus i</p>
-                              </div>
+                        <div class="relative">
+                            <button id="prevBtn" class="prev-btn absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md z-10">&#10094;</button>
+                            <div id="slideContainer" class="flex overflow-hidden">
+                                <div class="group relative w-54 h-70 rounded-lg overflow-hidden bg-gray-900 cursor-pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 flex-shrink-0 mx-2">
+                                    <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
+                                    <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
+                                        <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                                        <div class="flex flex-col space-y-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-24 text-center">Edit</button>
+                                            <button class="bg-green-500 text-white px-4 py-2 rounded-md w-24 text-center">PDF</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded-md w-24 text-center">Word</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative w-54 h-70 rounded-lg overflow-hidden bg-gray-900 cursor-pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 flex-shrink-0 mx-2">
+                                    <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
+                                    <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
+                                        <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                                        <div class="flex flex-col space-y-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-24 text-center">Edit</button>
+                                            <button class="bg-green-500 text-white px-4 py-2 rounded-md w-24 text-center">PDF</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded-md w-24 text-center">Word</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative w-54 h-70 rounded-lg overflow-hidden bg-gray-900 cursor-pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 flex-shrink-0 mx-2">
+                                    <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
+                                    <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
+                                        <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                                        <div class="flex flex-col space-y-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-24 text-center">Edit</button>
+                                            <button class="bg-green-500 text-white px-4 py-2 rounded-md w-24 text-center">PDF</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded-md w-24 text-center">Word</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative w-54 h-70 rounded-lg overflow-hidden bg-gray-900 cursor-pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 flex-shrink-0 mx-2">
+                                    <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
+                                    <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
+                                        <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                                        <div class="flex flex-col space-y-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-24 text-center">Edit</button>
+                                            <button class="bg-green-500 text-white px-4 py-2 rounded-md w-24 text-center">PDF</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded-md w-24 text-center">Word</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative w-54 h-70 rounded-lg overflow-hidden bg-gray-900 cursor-pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 flex-shrink-0 mx-2">
+                                    <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
+                                    <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
+                                        <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                                        <div class="flex flex-col space-y-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-24 text-center">Edit</button>
+                                            <button class="bg-green-500 text-white px-4 py-2 rounded-md w-24 text-center">PDF</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded-md w-24 text-center">Word</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative w-54 h-70 rounded-lg overflow-hidden bg-gray-900 cursor-pointer shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 flex-shrink-0 mx-2">
+                                    <img class="w-full h-full object-cover group-hover:opacity-50 transition duration-300 ease-in-out" src="https://picsum.photos/seed/picsum/200/300" alt="Template 1">
+                                    <div class="absolute inset-0 px-4 py-2 bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-b from-gray-900 to-transparent">
+                                        <h3 class="text-lg font-bold text-white mb-2">Dota 2</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                                        <div class="flex flex-col space-y-2">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-24 text-center">Edit</button>
+                                            <button class="bg-green-500 text-white px-4 py-2 rounded-md w-24 text-center">PDF</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded-md w-24 text-center">Word</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Repeat the above div for each template, changing the image src and content as needed -->
+                            </div>
+                            <button id="nextBtn" class="next-btn absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md z-10">&#10095;</button>
                         </div>
                     </div>
-                    <div class="flex justify-center mt-4">
-                        <div class="w-3 h-3 rounded-full bg-gray-400 mr-2 opacity-50 active:bg-blue-500 active:opacity-100"></div>
-                        <div class="w-3 h-3 rounded-full bg-gray-400 mr-2 opacity-50 active:bg-blue-500 active:opacity-100"></div>
-                        <div class="w-3 h-3 rounded-full bg-gray-400 opacity-50 active:bg-blue-500 active:opacity-100"></div>
-                    </div>
-                    <button class="next-btn disabled:opacity-50 hover:bg-gray-200 px-3 py-2 rounded-md">Next</button>
+                    
                     </section>
                 </div>
                
@@ -85,5 +124,5 @@
 
 
 <style>
-    
+
 </style>
