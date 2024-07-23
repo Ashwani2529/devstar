@@ -1,207 +1,71 @@
 <script>
     let searchQuery = '';
-    let templates = ['Template 1', 'Template 2', 'Template 3'];
+    let documents = ['Document 1', 'Document 2', 'Document 3'];
     let fileInput;
     let userName = '';
     let userEmail = '';
     let userFeedback = '';
-
-    $: filteredTemplates = templates.filter(template => 
-      template.toLowerCase().includes(searchQuery.toLowerCase()));
+    $: filteredDocuments = documents.filter(document => 
+      document.toLowerCase().includes(searchQuery.toLowerCase()));
     
     function handleUpload() {
         fileInput.click();
     }
-
     function handleFileChange(event) {
         const files = event.target.files;
         if (files.length > 0) {
             console.log("File uploaded:", files[0].name);
         }
     }
-
     function handleSubmitFeedback() {
         console.log(`Feedback from ${userName} (${userEmail}): ${userFeedback}`);
     }
 </script>
 
-<div class="page-layout">
-    <div class="left-sidebar">Left Side Navbar</div>
-    <div class="template-display">
-        {#if filteredTemplates.length > 0}
-            {#each filteredTemplates as template}
-            <div class="template-item">{template}</div>
-            {/each}
+<style>
+    .card {
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+    }
+</style>
+
+<div class="flex flex-col md:flex-row items-start p-4 gap-4 w-full h-full">
+    <div class="w-[15%] border border-yellow-100 bg-gray-50 shadow-lg">
+        <div class="text-xl font-semibold text-gray-700 p-4">Left Side Navbar</div>
+        <nav>
+            <ul class="list-none">
+                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">1</li>
+                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">2</li>
+                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">3</li>
+                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">4</li>
+                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">5</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="flex-[3 1 0%] p-4 w-full">
+        {#if filteredDocuments.length > 0}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {#each filteredDocuments as document}
+                <div class="card mb-4 p-6 bg-white rounded-lg shadow-lg text-center">{document}</div>
+                {/each}
+            </div>
         {:else}
-            <div class="no-results">No templates found.</div>
+            <div class="text-gray-500 text-center w-full">No documents found.</div>
         {/if}
     </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search Templates..." bind:value={searchQuery}>
-        <button class="upload-btn" on:click={handleUpload}>Upload New Template</button>
+    <div class="flex-[2 1 0%] flex-col items-center p-4 gap-4 bg-gray-200 rounded  shadow-md transition-transform duration-300 hover:translate-y-[-5px]">
+        <input type="text" placeholder="Search Documents..." bind:value={searchQuery} class="w-full p-2 mb-4 border border-gray-300 rounded focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs transition-all duration-300 focus:scale-[1.02]">
+        <button class="bg-green-400 hover:bg-green-700 text-white m-4  font-bold py-2 px-4 rounded transition-colors duration-300" on:click={handleUpload}>Upload New Document</button>
         <input type="file" bind:this={fileInput} on:change={handleFileChange} hidden>
-        <div class="form-container">
-            <form class="feedback-form" on:submit|preventDefault={handleSubmitFeedback}>
-                <input type="text" placeholder="Your name..." bind:value={userName} />
-                <input type="email" placeholder="Your email..." bind:value={userEmail} />
-                <textarea placeholder="Your feedback..." rows="4" bind:value={userFeedback}></textarea>
-                <button type="submit">Submit Feedback</button>
+        <div class="bg-gray-100 p-4 rounded shadow-md max-w-md mx-auto transition-transform duration-300 hover:translate-y-[-5px]">
+            <form class="flex flex-col gap-4 w-full" on:submit|preventDefault={handleSubmitFeedback}>
+                <input type="text" placeholder="Your name..." bind:value={userName} class="w-full p-2 mb-4 border border-gray-300 rounded-lg text-xs focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 focus:scale-[1.02]">
+                <input type="email" placeholder="Your email..." bind:value={userEmail} class="w-full p-2 mb-4 border border-gray-300 rounded-lg text-xs focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 focus:scale-[1.02]">
+                <textarea placeholder="Your feedback..." rows="4" bind:value={userFeedback} class="w-full p-2 mb-4 border border-gray-300 rounded-lg text-xs focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 focus:scale-[1.02]"></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Submit Feedback</button>
             </form>
         </div>
     </div>
 </div>
-<style>
-.page-layout {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    padding: 20px;
-    gap: 20px;
-}
-
-.left-sidebar {
-    flex: 1;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-right: 2px solid #ccc; 
-}
-
-.template-display {
-    flex: 3; 
-    padding: 10px;
-}
-
-.search-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.search-bar:hover {
-    transform: translateY(-5px);
-}
-
-.search-bar input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.search-bar input[type="text"]:focus {
-    border-color: #4CAF50;
-    transform: scale(1.02);
-}
-
-.search-bar .upload-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.search-bar .upload-btn:hover {
-    background-color: #007B9E;
-}
-
-.template-item {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #e7e7e7;
-    border-radius: 5px;
-}
-
-.no-results {
-
-    color: #999;
-    text-align: center;
-    width: 100%;
-}
-
-.upload-btn {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.feedback-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.feedback-form button {
-    padding: 10px 20px;
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto;
-    align-self: flex-start;
-}
-
-.form-container {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 20px auto;
-    transition: transform 0.3s ease;
-}
-
-.form-container:hover {
-    transform: translateY(-5px);
-}
-
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form textarea {
-    transition: all 0.3s ease;
-}
-
-.feedback-form input[type="text"]:focus,
-.feedback-form input[type="email"]:focus,
-.feedback-form textarea:focus {
-    border-color: #4CAF50;
-    transform: scale(1.02);
-}
-
-.feedback-form button {
-    transition: background-color 0.3s ease;
-}
-
-.feedback-form button:hover {
-    background-color: #007B9E;
-}
-</style>
