@@ -33,17 +33,30 @@
     <div class="w-full h-full dark:text-white flex flex-col">
         <h1 class="text-center">Devstar Document Templates Module</h1>
         <div class="flex">
-            <div class="w-[15%] border border-yellow-100">Left Side Navbar
-                <nav>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                </nav>
-            </div>
+          <div class="w-[15%] border border-gray-600 bg-gray-100 dark:bg-black p-4">             
+            <nav>
+                <ul class="list-none p-0">
+                    <li class="my-1 px-3 py-2 bg-blue-100 dark:bg-blue-600 rounded-lg text-center transition-colors duration-300 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 shadow-md text-black dark:text-white">
+                        <i class="fas fa-home"></i> Education
+                    </li>
+                    <li class="my-1 px-3 py-2 bg-blue-100 dark:bg-blue-600 rounded-lg text-center transition-colors duration-300 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 shadow-md text-black dark:text-white">
+                        <i class="fas fa-info-circle"></i> Medical
+                    </li>
+                    <li class="my-1 px-3 py-2 bg-blue-100 dark:bg-blue-600 rounded-lg text-center transition-colors duration-300 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 shadow-md text-black dark:text-white">
+                        <i class="fas fa-concierge-bell"></i> Business
+                    </li>
+                    <li class="my-1 px-3 py-2 bg-blue-100 dark:bg-blue-600 rounded-lg text-center transition-colors duration-300 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 shadow-md text-black dark:text-white">
+                        <i class="fas fa-briefcase"></i> Environment
+                    </li>
+                    <li class="my-1 px-3 py-2 bg-blue-100 dark:bg-blue-600 rounded-lg text-center transition-colors duration-300 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 shadow-md text-black dark:text-white">
+                        <i class="fas fa-blog"></i> Social
+                    </li>
+                    <li class="my-1 px-3 py-2 bg-blue-100 dark:bg-blue-600 rounded-lg text-center transition-colors duration-300 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 shadow-md text-black dark:text-white">
+                        <i class="fas fa-envelope"></i> Historical
+                    </li>
+                </ul>
+            </nav>
+        </div>   
             <div class="container relative mx-auto max-w-4xl overflow-hidden mt-10">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
@@ -279,7 +292,7 @@
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">Submit Feedback</button>
             </form>
         </div>
-    </div></div>
+    </div>
         </div>
     </div>
  
