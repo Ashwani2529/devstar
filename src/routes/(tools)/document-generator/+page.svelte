@@ -33,27 +33,10 @@
 
 <div class="flex flex-col md:flex-row items-start p-4 gap-4 w-full h-full">
     <div class="w-[15%] border border-yellow-100 bg-gray-50 shadow-lg">
-        <div class="text-xl font-semibold text-gray-700 p-4">Left Side Navbar</div>
-        <nav>
-            <ul class="list-none">
-                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">1</li>
-                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">2</li>
-                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">3</li>
-                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">4</li>
-                <li class="text-gray-600 hover:text-green-500 cursor-pointer p-2 pl-4">5</li>
-            </ul>
-        </nav>
+   
     </div>
     <div class="flex-[3 1 0%] p-4 w-full">
-        {#if filteredDocuments.length > 0}
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {#each filteredDocuments as document}
-                <div class="card mb-4 p-6 bg-white rounded-lg shadow-lg text-center">{document}</div>
-                {/each}
-            </div>
-        {:else}
-            <div class="text-gray-500 text-center w-full">No documents found.</div>
-        {/if}
+      
     </div>
     <div class="flex-[2 1 0%] flex-col items-center p-4 gap-4 bg-gray-200 rounded  shadow-md transition-transform duration-300 hover:translate-y-[-5px]">
         <input type="text" placeholder="Search Documents..." bind:value={searchQuery} class="w-full p-2 mb-4 border border-gray-300 rounded focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs transition-all duration-300 focus:scale-[1.02]">
