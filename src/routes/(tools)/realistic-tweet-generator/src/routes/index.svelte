@@ -29,7 +29,7 @@
 <section class="pt-24 md:pt-36 pb-8">
 	<Container classes="grid items-start lg:grid-cols-2 gap-6 lg:gap-8">
 		<div>
-			<h1 class="text-3xl font-bold mb-5">How to Use this Tweet generator </h1>
+			<!--<h1 class="text-3xl font-bold mb-5">How to Use this Tweet generator </h1>
 			<ul class="list-disc pl-6 mb-6">
 				<li class="mb-2">
 					Everything inside a <span class="border-2 border-dashed">dashed border</span> is editable.
@@ -39,7 +39,7 @@
 					Clicking on a Tweet's <i class="far fa-fw fa-ellipsis-h border-2 border-dashed" /> icon will
 					bring up additional options, such as adding an image and toggling the verified badge.
 				</li>
-			</ul>
+			</ul>-->
 			<h1 class="text-3xl font-bold mb-5">Configuration</h1>
 			<form class="mb-6">
 				<p class="mb-3 font-bold">Theme</p>

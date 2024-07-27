@@ -1,9 +1,16 @@
 {
     "name": "Realistic-tweet-generator",
     "description":"This tool generate Realistic tweets.",
-    "contributors": [{
+    "contributors": {
         "name": "Tanvi Cheulkar",
-        "githubId": "https://github.com/tanvi998"
+        "githubId": "https://github.com/tanvi998"},
+
+    "name": "",
+    "description":"",
+    "contributors": [{
+        "name": "",
+        "githubId": ""
+
     }, {
         "name": "",
         "githubId": ""
