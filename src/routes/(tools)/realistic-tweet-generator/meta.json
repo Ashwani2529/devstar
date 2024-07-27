@@ -1,4 +1,4 @@
-{
+{ team-4z
     "name": "Realistic-tweet-generator",
     "description":"This tool generate Realistic tweets.",
     "contributors": {
@@ -12,8 +12,8 @@
         "githubId": ""
 
     }, {
-        "name": "",
-        "githubId": ""
+        "name": "Lingeshwaran",
+        "githubId": "https://github.com/lingeshwaran05"
     },
     {
         "name": "",
